@@ -28,7 +28,7 @@ submit.addEventListener("click", function (e) {
 });
 
 //이메일 validation check
-function checkId(e) {
+function checkId() {
   const idVal = document.querySelector("#userId").value;
   let returnVal = false;
   const idCheck = RegExp(/\S+@\S+\.\S+/);
