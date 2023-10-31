@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인폼</title>
+
+    <!-- reset.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
+    />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="inner">
+        <div class="login-wrap">
+          <ul class="menu-wrap">
+            <li class="focus">ID 로그인</li>
+            <li>일회용 번호</li>
+            <li>QR코드</li>
+          </ul>
+          <div class="input-wrap">
+            <div class="input-inner">
+              <form class="id-pw-line" method="post">
+                <div class="id-line input-line">
+                  <div class="icon-cell">
+                    <span class="material-icons">person</span>
+                  </div>
+
+                  <input
+                    type="text"
+                    class="user-id input-text"
+                    id="userId"
+                    placeholder="아이디"
+                  />
+                </div>
+                <div class="pw-line input-line">
+                  <div class="icon-cell">
+                    <span class="material-icons">lock</span>
+                  </div>
+
+                  <input
+                    type="password"
+                    class="user-pw input-text"
+                    id="userPw"
+                    placeholder="비밀번호"
+                  />
+                </div>
+              </form>
+            </div>
+
+            <div class="btm-line">
+              <div class="btm-left">
+                <div class="status">
+                  <input
+                    type="checkbox"
+                    name="log-on-status"
+                    id="log-on-status"
+                    class="hidden"
+                  />
+                  <label for="log-on-status" class="log-on-status"
+                    >로그인 상태 유지</label
+                  >
+                </div>
+              </div>
+              <div class="btm-right">
+                <a href="javascript:void(0)">IP보안</a>
+                <span class="switch">
+                  <input
+                    type="checkbox"
+                    name="switch-btn"
+                    id="switch-btn"
+                    class="hidden"
+                  />
+                  <label for="switch-btn">
+                    <span class="switch-blind hidden">On</span>
+                  </label>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="alert-err-wrap">
+            <span class="err-text"></span>
+          </div>
+          <div class="btn-login-wrap">
+            <button type="submit" class="btn btn-submit">
+              <span class="btn-text">로그인</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
